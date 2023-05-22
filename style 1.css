@@ -1,0 +1,70 @@
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-y: hidden;
+    background-color: #020e26;
+}
+
+
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 1em 3em;
+    color: rgb(119, 33, 199);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.5em rgb(119, 33, 199);
+    background-color: rgb(93, 18, 163);
+    border: 0.25em solid rgb(119, 33, 199);
+    border-radius: 10em;
+    box-shadow: 0 0 1em rgb(119, 33, 199), 
+    0 0 4em 1em rgb(105, 28, 177),
+    inset 0 0 0.75em 0.25em rgb(119, 33, 199);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(170, 19, 19);
+    filter: blur(2em);
+    opacity: 0.7;
+    pointer-events: none;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(170, 19, 19);
+    box-shadow: 0 0 1em 0.25em rgb(170, 19, 19),
+    0 0 4em 2em rgb(170, 19, 19),
+    inset 0 0 0.75em 0.25em rgb(170, 19, 19);
+}
+
+button:active {
+    box-sizing: 0 0 0.6em 0.25em rgb(170, 19, 19),
+    0 0 2.5em 2em rgb(170, 19, 19),
+    inset 0 0 0.5em 0.25em rgb(170, 19, 19);
+} 
+
+    
